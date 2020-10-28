@@ -1,0 +1,93 @@
+.container {
+    background: gray;
+    width: 40%;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+}
+
+.colorful-head {
+    width: 100px;
+    height: 100px;
+    border: 2px solid white;
+    border-radius: 50%;
+    margin-top: 30px;
+    transition: margin-left 1s linear;
+    animation: bg-color-changes 1s infinite, left-right-margin 1s infinite;
+}
+
+/* .blue-ball:hover {
+    margin-left: 460px;
+} */
+
+.eyes {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.left-eye {
+    width: 10px;
+    height: 10px;
+    border: none;
+    border-radius: 50%;
+    background-color: black;
+    margin-left: 20px;
+}
+
+.right-eye {
+    width: 10px;
+    height: 10px;
+    border: none;
+    border-radius: 50%;
+    background-color: black;
+    margin-right: 20px;
+}
+
+.mouth {
+    width: 30px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: red;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@keyframes bg-color-changes {
+    0% {
+        background-color: khaki;
+    }
+
+    25% {
+        background-color: orange;
+    }
+
+    5% {
+        background-color: pink;
+    }
+
+    75% {
+        background-color: greenyellow;
+    }
+    
+    100% {
+        background-color: white;
+    }
+}
+
+@keyframes left-right-margin {
+    0% {
+        margin-left: 0px;
+    }
+    
+    100% {
+        margin-left: 460px;
+    }
+}
+
+
+
+
+
