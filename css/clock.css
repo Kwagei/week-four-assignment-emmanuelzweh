@@ -1,0 +1,95 @@
+
+.clock {
+    width: 40%;
+    height: 550px;
+    margin: 5px auto 0 auto;
+    background-image: url(../img/clock);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+/* This styling is for the second hand */
+
+.clock .second-hand-div {
+    background-color: black;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    position: absolute;
+    top: 260px;
+    left: 260px;
+    animation: rotating-hands 60s infinite steps(60);
+}
+
+.clock .second-hand-div .second-hand {
+    width: 5px;
+    height: 200px;
+    background-color: black;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -15px;
+
+
+
+}
+
+/* This styling is for the minute hand */
+
+.clock .minute-hand-div {
+    background-color: black;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    position: absolute;
+    top: 260px;
+    left: 260px;
+    animation: rotating-hands 3600s infinite steps(60);
+}
+
+.clock .minute-hand-div .minute-hand {
+    width: 10px;
+    height: 170px;
+    background-color: black;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -15px;
+}
+
+/* This styling is for the hour hand */
+
+.clock .hour-hand-div {
+    background-color: red;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    position: absolute;
+    top: 260px;
+    left: 260px;
+    animation: rotating-hands 12960000s infinite steps(60);
+
+}
+
+.clock .hour-hand-div .hour-hand {
+    width: 15px;
+    height: 130px;
+    background-color: black;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -15px;
+}
+
+
+@keyframes rotating-hands {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% { 
+        transform: rotate(360deg);
+    }
+}
+
+
+
+
+
