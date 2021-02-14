@@ -1,0 +1,118 @@
+
+.clock {
+    width: 40%;
+    height: 550px;
+    margin: 5px auto 0 auto;
+    background-image: url(../img/clock);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    border: 40px solid gold;
+    border-radius: 50%;
+    padding-right: 10px;
+}
+
+/* This styling is for the second hand */
+
+.clock .second-hand-div {
+    background-color: black;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    position: absolute;
+    top: 260px;
+    left: 260px;
+    animation: rotating-hands 60s infinite steps(60);
+}
+
+.clock .second-hand-div .second-hand {
+    width: 3px;
+    height: 200px;
+    background-color: red;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+}
+
+/* This styling is for the minute hand */
+
+.clock .minute-hand-div {
+    background-color: black;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    position: absolute;
+    top: 260px;
+    left: 260px;
+    animation: rotating-hands 3600s infinite steps(60);
+}
+
+.clock .minute-hand-div .minute-hand {
+    width: 10px;
+    height: 170px;
+    background-color: black;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+
+/* This styling is for the hour hand */
+
+.clock .hour-hand-div {
+    background-color: red;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    position: absolute;
+    top: 260px;
+    left: 260px;
+    animation: rotating-hands 12960000s infinite steps(60);
+
+}
+
+.clock .hour-hand-div .hour-hand {
+    width: 15px;
+    height: 130px;
+    background-color: black;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+
+.clock .round-cover {
+    background-color: gold;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    top: 255px;
+    left: 257px;
+}
+
+
+@keyframes rotating-hands {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% { 
+        transform: rotate(360deg);
+    }
+}
+
+.clock-stem {
+    width: 40%;
+    height: 150px;
+    margin: auto;
+    background-color: black;
+    color: gold;
+}
+
+.clock-stem h1 {
+    text-align: center;
+    margin: 0;
+    padding-top: 20px;
+}
+
+
+
+
